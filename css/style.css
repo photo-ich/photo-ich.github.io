@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+header, footer{
+    background-color: skyblue;
+    background: linear-gradient(#FFFFFF 0%, #FFE69C 67%);
+    margin: 0;
+    padding: 0.5em;
+    padding-top:2em;
+    padding-bottom: 2em;
+    
+}
+h1{
+    color:#70AD47;
+    vertical-align: middle;
+    font-size: 3em;
+}
+h1::before{
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("../logo.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+h2 {
+    display: block;
+    position: relative;
+    border-image: linear-gradient(90deg, var#70AD47, transparent 100%);
+    ;
+    padding: 0.2em 0.4em;
+}
+
+h2::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #70AD47, transparent 100%);
+    bottom: -0.1em;
+    right: 0%;
+    border-radius: 2.5px;
+}
+
+h2::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #70AD47, transparent 100%);
+    top: -0.1em;
+    right: 0%;
+    border-radius: 2.5px;
+}
+dd {
+    margin-inline-start: 0.5em;
+}
+section{
+    margin: 1em;
+}
+
+
+dt,
+dd {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+ol,
+ul {
+    padding-left: 1.3em;
+}
+.bigms{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
